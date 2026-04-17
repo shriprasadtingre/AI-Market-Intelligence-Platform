@@ -59,3 +59,22 @@ plt.show(block=False)
 plt.pause(5)
 plt.savefig("../docs/reliance_chart.png", dpi=300, bbox_inches="tight")
 print("Chart saved successfully")
+# -----------------------
+# MOVING AVERAGE ANALYSIS
+# -----------------------
+
+df["MA20"] = df["Close"].rolling(window=20).mean()
+
+plt.figure(figsize=(12,6))
+plt.plot(df["Date"], df["Close"], label="Close Price")
+plt.plot(df["Date"], df["MA20"], label="20-Day Moving Average")
+
+plt.title("Reliance Price vs 20-Day Moving Average")
+plt.xlabel("Date")
+plt.ylabel("Price")
+plt.legend()
+plt.grid(True)
+
+plt.savefig("../docs/reliance_ma20_chart.png", dpi=300, bbox_inches="tight")
+plt.show(block=False)
+plt.pause(5)

@@ -23,4 +23,4 @@ Phase 1: Project Setup
 - Dependency management
 - Dynamic file path handling
 - Stock market data ingestion pipeline
-- CSV dataset export
+- CSV dataset export 
