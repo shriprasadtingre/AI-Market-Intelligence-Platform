@@ -23,4 +23,11 @@ Phase 1: Project Setup
 - Dependency management
 - Dynamic file path handling
 - Stock market data ingestion pipeline
-- CSV dataset export 
+- CSV dataset export
+
+## Analytics Features
+
+- Data cleaning pipeline
+- Closing price visualization
+- 20-day moving average trend chart
+- Exploratory Data Analysis using pandas and matplotlib
